@@ -36,8 +36,14 @@
             // $("#right-card").children().css("color", "green", "!important");
             $(".target:odd").addClass("animate__animated animate__zoomInUp");
             $(".target:even").addClass("animate__animated animate__slideInDown");
+            // $("body").addClass("animate__animated animate__hinge");
+            $("hide").click(function(){
+                $("p").hide();
+            });
 
-
+            $("#SHOW").click((()=>{
+            $("p").show();
+            }));
         });
     </script>
   </head>
@@ -75,6 +81,15 @@
             </div>
         </section>
     </main>
+
+    <section>
+        <h2>Jquery Effects</h2>
+        <p>We can hide a button and show a button</p>
+        
+        <button id="hide">HIDE</button>
+        <button id="show">SHOW</button>
+    </section>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
