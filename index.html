@@ -14,9 +14,17 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
-            // $("button").addClass("animate__animated animate__bounce");
-            // $(".card").addClass("animate__animated animate__shakeX");
+            $("button").addClass("animate__animated animate__bounce");
+            $(".card").addClass("animate__animated animate__shakeX");
             $("#target--3").addClass("animate__animated animate__shakeY")
+            // $("button").removeClass("btn-primary");
+            $("#target--1").css("color", "yellow");
+            let a = 2;
+            if(a == 1){
+            $("button").prop("disabled", true);
+            }else{
+            $("button").prop("disabled", false);
+            }
         });
     </script>
   </head>
