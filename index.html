@@ -25,12 +25,19 @@
             // $("button").prop("disabled", true);
             // }else{
             // $("button").prop("disabled", false);
-            // }
-            $("#target--4").html("<em>Target 5</em>");
-            $("#target--4").text("<em>Target 5</em>");
-            $("#target--6").remove();
-            $("#target--4").appendTo("#left-card");
-            $("#target--3").appendTo("#right-card");
+            // // }
+            // $("#target--5").html("<em>Target 5</em>");
+            // $("#target--6").text("Button 6");
+            // // $("#target--6").remove();
+            // $("#target--4").appendTo("#left-card");
+            // $("#target--3").appendTo("#right-card");
+            // $("#target--6").clone().appendTo("#left-card");
+            // $("#target--1").parent().css("background-color", "lightblue");
+            // $("#right-card").children().css("color", "green", "!important");
+            $(".target:odd").addClass("animate__animated animate__zoomInUp");
+            $(".target:even").addClass("animate__animated animate__slideInDown");
+
+
         });
     </script>
   </head>
