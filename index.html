@@ -28,6 +28,24 @@
             background-color: blue;
         }
 
+        
+        #panel, #flip{
+            padding: 5px;
+            text-align: center;
+            background-color: yellow;
+            border: solid 1px black;
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        #flip{
+            cursor: pointer;
+        }
+
+        #panel{
+            padding: 50px;
+            display: none;
+        }
 
     </style>
 
@@ -77,7 +95,10 @@
                 $("#div1").fadeIn("slow");
                 $("#div2").fadeIn("3000");
                 $("#div3").fadeIn("5000");
+            })
 
+            $("#flip").click(()=>{
+                $("#panel").slideDown("slow");
             })
         });
     </script>
@@ -132,13 +153,17 @@
             <p id="para--toggle">This is our paragraph for testing the toggle effect</p>
         </section>
         
-        <section style="height: 50vh; background-color: lightblue;">
+        <section style="height: 50vh; background-color: antiquewhite;">
             <button id="btn--fade">Click to Fade</button>
             <h2>Fade effect</h2>
             <div id="div1"></div>
             <div id="div2"></div>
             <div id="div3"></div>
-            
+        </section>
+
+        <section style="height: 50vh; background-color: lightblue;">
+            <div id="flip">Click to slide down</div>
+            <dic id="panel">Sliding panel</dic>
         </section>
     </main>
     
