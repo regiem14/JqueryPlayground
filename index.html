@@ -37,13 +37,17 @@
             $(".target:odd").addClass("animate__animated animate__zoomInUp");
             $(".target:even").addClass("animate__animated animate__slideInDown");
             // $("body").addClass("animate__animated animate__hinge");
-            $("hide").click(function(){
+            $("#hide").click(function(){
                 $("p").hide();
             });
 
-            $("#SHOW").click((()=>{
+            $("#show").click((()=>{
             $("p").show();
             }));
+
+            $("#btnWithDelay").click(function(){
+            $("#hideWithDelay").hide(1000);
+            })
         });
     </script>
   </head>
@@ -80,15 +84,19 @@
                 </div>
             </div>
         </section>
+        <hr>
+        <section>
+            <h2>Jquery Effects</h2>
+            <p>We can hide a button and show a button</p>
+            
+            <button id="hide">HIDE</button>
+            <button id="show">SHOW</button>
+        </section>
+        <hr>
+        <button id="btnWithDelay">HIDE WITH DELAY</button>
+        <p id="hideWithDelay">This our first paragraph</p>
+        <p id="hideWithDelay">This our second paragraph</p>
     </main>
-
-    <section>
-        <h2>Jquery Effects</h2>
-        <p>We can hide a button and show a button</p>
-        
-        <button id="hide">HIDE</button>
-        <button id="show">SHOW</button>
-    </section>
     
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
