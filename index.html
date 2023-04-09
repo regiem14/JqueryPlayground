@@ -10,6 +10,26 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <style>
+        #div1, #div2, #div3{
+            width: 80px;
+            height: 90px;
+            display: none; 
+            margin: 10px;
+        }
+        
+        #div1{
+            background-color: red;
+        }
+        #div2{
+            background-color: green;
+        }
+        #div3{
+            background-color: blue;
+        }
+
+
+    </style>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
@@ -51,6 +71,13 @@
 
             $("#btn--toggle").click(()=>{
                 $("#para--toggle").toggle();
+            })
+            
+            $("#btn--fade").click(function(){
+                $("#div1").fadeIn("slow");
+                $("#div2").fadeIn("3000");
+                $("#div3").fadeIn("5000");
+
             })
         });
     </script>
@@ -105,6 +132,14 @@
             <p id="para--toggle">This is our paragraph for testing the toggle effect</p>
         </section>
         
+        <section style="height: 50vh; background-color: lightblue;">
+            <button id="btn--fade">Click to Fade</button>
+            <h2>Fade effect</h2>
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+            
+        </section>
     </main>
     
     <script
