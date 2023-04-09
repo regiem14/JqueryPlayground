@@ -48,6 +48,10 @@
             $("#btnWithDelay").click(function(){
             $("#hideWithDelay").hide(1000);
             })
+
+            $("#btn--toggle").click(()=>{
+                $("#para--toggle").toggle();
+            })
         });
     </script>
   </head>
@@ -91,11 +95,16 @@
             
             <button id="hide">HIDE</button>
             <button id="show">SHOW</button>
+            <hr>
+            <button id="btnWithDelay">HIDE WITH DELAY</button>
+        <p id="hideWithDelay">This is our paragraph for testing the hide delay</p>
+
+            <hr>
+            <h4>Toogle effect</h4>
+            <button id="btn--toggle">Toogle Paragraphs</button>
+            <p id="para--toggle">This is our paragraph for testing the toggle effect</p>
         </section>
-        <hr>
-        <button id="btnWithDelay">HIDE WITH DELAY</button>
-        <p id="hideWithDelay">This our first paragraph</p>
-        <p id="hideWithDelay">This our second paragraph</p>
+        
     </main>
     
     <script
