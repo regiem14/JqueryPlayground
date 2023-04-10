@@ -101,6 +101,10 @@
             $("#flip").click(()=>{
                 $("#panel").slideDown("slow");
             })
+
+            $("button").click(()=>{
+                alert("Value: " +$("#testValue").val())
+            })
         });
     </script>
   </head>
@@ -165,6 +169,11 @@
         <section style="height: 50vh; background-color: lightblue;">
             <div id="flip">Click to slide down</div>
             <dic id="panel">Sliding panel</dic>
+        </section>
+
+        <section style="height: 50vh; background-color: goldenrod; text-align: center;">
+            <p>Name: <input type="text" id="testValue" value="Regie Marzan"></p>
+            <button>Show Value</button>
         </section>
     </main>
     
